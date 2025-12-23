@@ -159,7 +159,7 @@ test('dependencies[i] must not be empty', () => {
     // toString() doesn't recurse, so we'd have to build the whole error message
     // ourselves.
     [
-      'instance.wireit.a.dependencies[0] is not any of [subschema 0],[subschema 1]',
+      'instance.wireit.a.dependencies[0] is not any of <#/$defs/scriptName>,<#/$defs/scriptObject>',
     ],
   );
 });
@@ -229,7 +229,7 @@ test('dependencies must be an array of strings', () => {
       },
     },
     [
-      'instance.wireit.a.dependencies[0] is not any of [subschema 0],[subschema 1]',
+      'instance.wireit.a.dependencies[0] is not any of <#/$defs/scriptName>,<#/$defs/scriptObject>',
     ],
   );
 });
@@ -245,7 +245,7 @@ test('dependencies[i].script is required', () => {
       },
     },
     [
-      'instance.wireit.a.dependencies[0] is not any of [subschema 0],[subschema 1]',
+      'instance.wireit.a.dependencies[0] is not any of <#/$defs/scriptName>,<#/$defs/scriptObject>',
     ],
   );
 });
@@ -261,7 +261,7 @@ test('dependencies[i].cascade must be boolean', () => {
       },
     },
     [
-      'instance.wireit.a.dependencies[0] is not any of [subschema 0],[subschema 1]',
+      'instance.wireit.a.dependencies[0] is not any of <#/$defs/scriptName>,<#/$defs/scriptObject>',
     ],
   );
 });
